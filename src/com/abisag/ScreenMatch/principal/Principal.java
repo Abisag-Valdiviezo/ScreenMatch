@@ -1,3 +1,5 @@
+package com.abisag.ScreenMatch.principal;
+
 import com.abisag.ScreenMatch.calculos.CalculadoraDeTiempo;
 import com.abisag.ScreenMatch.calculos.FiltroRecomendacion;
 import com.abisag.ScreenMatch.modelos.Episodio;
@@ -5,7 +7,6 @@ import com.abisag.ScreenMatch.modelos.Pelicula;
 import com.abisag.ScreenMatch.modelos.Serie;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Principal {
     public static void main(String[] args) {

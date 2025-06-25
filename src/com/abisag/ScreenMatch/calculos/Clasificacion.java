@@ -1,4 +1,5 @@
 package com.abisag.ScreenMatch.calculos;
 
-public class Clasificacion {
+public interface Clasificacion {
+    int getClasificacion();
 }

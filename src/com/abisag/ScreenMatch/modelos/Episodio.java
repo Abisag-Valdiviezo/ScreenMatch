@@ -1,10 +1,22 @@
 package com.abisag.ScreenMatch.modelos;
 
-public class Eoisodio {
+import com.abisag.ScreenMatch.calculos.Clasificacion;
+
+public class Episodio implements Clasificacion {
 
     private int numero;
     private String nombre;
     private Serie serie;
+
+    public int getTotalVisualizacion() {
+        return totalVisualizacion;
+    }
+
+    public void setTotalVisualizacion(int totalVisualizacion) {
+        this.totalVisualizacion = totalVisualizacion;
+    }
+
+    private int totalVisualizacion;
 
     public int getNumero() {
         return numero;
@@ -28,5 +40,14 @@ public class Eoisodio {
 
     public void setSerie(Serie serie) {
         this.serie = serie;
+    }
+
+    @Override
+    public int getClasificacion() {
+        if(totalVisualizacion >100){
+            return 4;
+        }else{
+            return 2;
+        }
     }
 }
